@@ -1,4 +1,4 @@
-package com.example.androidxpro.base;
+package com.example.basicpro.base;
 
 import android.os.Bundle;
 import android.view.ViewGroup;
@@ -9,10 +9,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 
-import com.example.androidxpro.R;
-import com.example.androidxpro.databinding.ToolbarLayoutBinding;
+import com.example.basicpro.R;
+import com.example.basicpro.databinding.ToolbarLayoutBinding;
 
-public abstract class BasicActivity<T extends ViewDataBinding> extends AppCompatActivity {
+
+public abstract class BasicToolBarActivity<T extends ViewDataBinding> extends AppCompatActivity {
 
     public T binding;
     private ToolbarLayoutBinding toolbar;

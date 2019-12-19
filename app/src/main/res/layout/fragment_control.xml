@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="control"
+            type="com.example.androidxpro.fragment.ControlFragment" />
+    </data>
+
+    <FrameLayout
+        style="@style/match_match_ver"
+        tools:context=".fragment.CtrolFragment">
+        <TextView
+            style="@style/match_match_ver"
+            android:gravity="center"
+            android:text="@{String.valueOf(control.data)}" />
+    </FrameLayout>
+</layout>
