@@ -12,7 +12,6 @@
         style="@style/match_match_ver"
         tools:context=".fragment.MainFragment">
 
-        <!-- TODO: Update blank fragment layout -->
         <TextView
             style="@style/match_match_ver"
             android:layout_gravity="center"
