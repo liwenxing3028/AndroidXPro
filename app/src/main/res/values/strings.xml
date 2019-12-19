@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AndroidXPro</string>
+    <string name="tool_right">添加</string>
+    <string name="tool_left">切换</string>
+</resources>
