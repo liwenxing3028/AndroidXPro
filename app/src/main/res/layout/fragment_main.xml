@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
         <variable
@@ -8,15 +9,19 @@
             type="com.example.androidxpro.fragment.MainFragment" />
     </data>
 
-    <FrameLayout
+    <LinearLayout
         style="@style/match_match_ver"
         tools:context=".fragment.MainFragment">
 
-        <TextView
-            style="@style/match_match_ver"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:text="@{String.valueOf(main.data)}" />
+        <com.zhpan.bannerview.BannerViewPager
+            android:id="@+id/banner_view"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_margin="10dp"
+            app:bvp_page_style="multi_page" />
 
-    </FrameLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_main"
+            style="@style/layout_Match_Auto"/>
+    </LinearLayout>
 </layout>

@@ -12,8 +12,8 @@ import androidx.viewpager.widget.ViewPager;
  * author : 李文星
  * e-mail : 15168881989@163.com
  * date   : 2019-12-1914:10
- * desc   :
- * version: 1.0
+ * desc   : 没有滑动
+ * version: 1.0¬
  */
 public class NoScrollPager extends ViewPager {
 

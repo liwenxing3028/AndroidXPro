@@ -7,6 +7,7 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
 
+import androidx.annotation.RequiresApi;
 import androidx.core.content.FileProvider;
 
 import java.io.File;
@@ -40,6 +41,7 @@ public class ApkUtil {
      *
      * @param context 上下文
      */
+    @RequiresApi(api = Build.VERSION_CODES.P)
     public static long getVersionCode(Context context) {
         try {
             PackageManager packageManager = context.getPackageManager();

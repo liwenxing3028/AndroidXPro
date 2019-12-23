@@ -1,4 +1,7 @@
 apply plugin: 'com.android.application'
+//apply plugin: 'kotlin-android-extensions'
+//apply plugin: 'kotlin-android'
+apply plugin: 'vip.ruoyun.screen'
 
 android {
     compileSdkVersion 28
@@ -26,6 +29,14 @@ android {
     buildToolsVersion = '28.0.3'
 }
 
+screen {
+    smallestWidths 320, 360, 384, 392, 400, 410, 411, 432, 480 //生成的目标屏幕宽度的适配文件
+    designSmallestWidth 375 //苹果设计稿750 × 1334   屏幕宽度为 375
+    decimalFormat "#.#" //设置保留的小数 ( #.## 保留2位) ( #.# 保留1位)
+    log false //是否打印日志
+    auto false //是否每次 build 项目的时候自动生成 values-sw[]dp 文件
+}
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.1.0'
@@ -35,4 +46,11 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation project(path: ':basicpro')
+    implementation 'androidx.gridlayout:gridlayout:1.0.0'
+    implementation 'com.github.zhpanvip:BannerViewPager:2.6.2'
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.0-beta2'
+    //implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}
+repositories {
+    mavenCentral()
 }

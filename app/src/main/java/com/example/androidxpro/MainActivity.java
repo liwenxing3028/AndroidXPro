@@ -36,6 +36,7 @@ public class MainActivity extends BaseNoModelActivity<ActivityMainBinding> {
         fragments.add(new ControlFragment());
         fragments.add(new PersonFragment());
         dataBinding.viewPager.setAdapter(new ViewPagerAdapter(getSupportFragmentManager(),fragments));
+        dataBinding.viewPager.setOffscreenPageLimit(fragments.size());
     }
 
     @Override

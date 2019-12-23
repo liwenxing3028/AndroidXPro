@@ -9,14 +9,11 @@
     </data>
 
     <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        style="@style/match_match_ver"
         tools:context=".fragment.PensonFragment">
 
-        <!-- TODO: Update blank fragment layout -->
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            style="@style/match_match_ver"
             android:gravity="center"
             android:text="@{String.valueOf(person.data)}" />
 
